@@ -368,7 +368,7 @@ public void CurrentDate(){
     private void btn_date_exportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_date_exportActionPerformed
         // TODO add your handling code here:
        // String startdate = ((JTextField)startdate.getDateEditor().getUiComponents.setText())
-        String sql = "SELECT * into OUTFILE 'C:/Users/Raju/Downloads/date_wise_reports1.csv' from issue_books where Issue_Date ='"+start_date.getText()+"' and '"+end_date.getText()+"'";
+        String sql = "SELECT * into OUTFILE 'C:/Users/Raju/Downloads/date_wise_reports.xls' from issue_books where Issue_Date BETWEEN '"+start_date.getText()+"' and '"+end_date.getText()+"'";
         try{
             pst=conn.prepareStatement(sql);
             pst.execute();
