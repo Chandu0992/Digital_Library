@@ -16,7 +16,7 @@ public class DbConnect {
          
          try{
              Class.forName("java.sql.Driver");
-             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/d_library","root","");
+             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/dl","root","MySql@8922");
              //JOptionPane.showMessageDialog(null,"Connected to Database Sucessfully !");
              return conn;
          }catch(Exception e){
